@@ -30,7 +30,7 @@ let analytics;
 if (typeof window !== "undefined") {
   analytics = getAnalytics(app);
 }
-const db = getFirestore(app);
+getFirestore(app);
 
 const MyPage = () => {
   const [posts, setPosts] = useState([]);
